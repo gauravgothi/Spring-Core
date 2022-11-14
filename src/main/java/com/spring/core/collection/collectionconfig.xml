@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+<bean class="com.spring.core.collection.Employee" name="employee1">
+	<property name="name" value ="Gaurav Gothi" />
+	
+	<property name="phones">
+		<list>
+				<value>9144875522</value>
+				<value>8748784521</value>
+				<value>8748784521</value>
+		</list>
+	</property>
+	
+	<property name="addresses">
+		<set>
+				<value>581 Panchwati Indore</value>
+				<value>Pologround Indore</value>
+				<value>Pologround Indore</value>
+		</set>
+	</property>
+	
+	<property name="courses">
+		<map>
+				<entry key="java" value="1 months" />
+				<entry key="python" value="20 days" />
+				<entry key="spring" value="2 months" />
+		</map>
+	</property>
+	
+	<property name="props">
+		<props>
+				<prop key="Type"> Regular </prop>
+				<prop key="Basic"> 56100 </prop>
+				<prop key="class"> 3 </prop>		
+		</props>
+	</property>
+	
+</bean>
+ </beans>
+ 
